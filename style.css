@@ -1,37 +1,39 @@
-
+* {
+    margin: 0;
+}
 :root {
     --bg-color: #22212C;
     --bg-color-cards: #302F3D;
     --text-color: #837E9F;
 
 }
-body  {
+
+#body  {
     font-family: 'Merriweather Sans', sans-serif;
     color: var(--text-color);
     box-sizing: border-box;
-    
+    display: flex;
+    align-items: stretch;
+    /* column-gap: 100%; */
+    gap: 40px;
+    height: 100vh;
     
     padding: 40px;
     background: var(--bg-color);
 }
 
 .profile {
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position:  absolute;
     width: 348px;
     height: 292px;
     left: 40px;
     top: 40px;
-    
-
-
     background: var(--bg-color-cards);
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
-
 
 .profile img {
     margin-top: 32px;
@@ -40,22 +42,15 @@ body  {
     margin-bottom: 30px;
     width: 128px;
     height: 128px;
- 
 }
 
-#name {
+.profile #name {
     font-weight: 700;
     font-style: normal;
     font-size: 23px;
     line-height: 29px;
-}
-
-.profile #name {
-
     display: grid;
     place-items: center;
-    border: 2px solid red;
-
 }
 
 .profile #dsc {
@@ -65,39 +60,72 @@ body  {
     font-weight: 300;
     font-size: 13px;
     line-height: 16px;
-    border: 2px solid red;
-
 }
 
 .projects {
-    position: absolute;
-    width: 852px;
-    height: 86px;
-    left: 448px;
-    top: 40px;
-    border: solid 2px red   ;
-    display: inline;
-    
+    /* width: 100%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
     background: var(--bg-color-cards);
     border-radius: 20px ;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 292px;
+    left: 40px;
+    top: 40px;
+    background: var(--bg-color-cards);
+    border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
 .projects #proj {
-    
-    display: grid;
-    margin-top: 30px;
-    margin-left: 30px;
-
+    width: max-content;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
-    border: solid 2px red;
-
 }
 
-.projects #todo {
-    border: solid 2px red;
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#container .links{
+    background: var(--bg-color-cards);
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    line-height: 2;
+    font-size: 15px;
+
+    display: inline;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#containerS2 {
+    height: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#containerS2 {
 
 }
