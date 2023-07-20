@@ -62,6 +62,7 @@
 
 .profile #dsc {
     margin-top: 10px;
+    margin-bottom: 10px;
     display: grid;
     place-items: center;
     font-weight: 300;
@@ -200,7 +201,7 @@ ul li {
     background: #CB92B1;
     border-radius: 24px;
     width: 86px;
-    height: 24px;
+    /* height: 24px; */
     white-space: pre;
 }
 
